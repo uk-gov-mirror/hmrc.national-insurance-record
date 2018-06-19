@@ -76,7 +76,7 @@ trait NpsConnection extends NationalInsuranceRecordService {
           purgedNIRecord.nonQualifyingYearsPayable,
           purgedNIRecord.dateOfEntry,
           desHomeResponsibilitiesProtection(desLiabilities.liabilities),
-          desSummary.earningsIncludedUpTo.get,
+          desSummary.earningsIncludedUpTo.getOrElse(new LocalDate()),
           purgedNIRecord.niTaxYears.map(desTaxYearToNIRecordTaxYear).sortBy(_.taxYear)(Ordering[String].reverse),
           desSummary.rreToConsider
         )
