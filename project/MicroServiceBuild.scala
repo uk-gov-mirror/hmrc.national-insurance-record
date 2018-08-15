@@ -14,17 +14,17 @@ private object AppDependencies {
   import play.core.PlayVersion
 
   private val microserviceBootstrapVersion = "6.18.0"
-  private val domainVersion = "5.1.0"
+  private val domainVersion = "5.2.0"
   private val pegdownVersion = "1.6.0"
   private val playHmrcApiVersion = "2.1.0"
   private val playHalVersion = "1.2.0"
-  private val reactivemongoVersion = "5.2.0"
+  private val reactivemongoVersion = "6.1.0"
 
-  private val hmrcTestVersion = "2.4.0"
+  private val hmrcTestVersion = "3.0.0"
   private val scalaTestVersion = "2.2.6"
   private val scalaTestPlusVersion = "1.5.1"
   private val mockitoAllVersion = "1.9.5"
-  private val reactivemongoTestVersion = "2.0.0"
+  private val reactivemongoTestVersion = "3.1.0"
 
   val compile = Seq(
 
